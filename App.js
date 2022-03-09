@@ -1,13 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 
-import Cep from './src/components/cep'
+import Cep from './src/components/Cep'
+import Header from './src/components/Header';
+
+const theme = {
+  ...DefaultTheme,
+  roundness: 2,
+  colors: {
+    ...DefaultTheme.colors,
+    // primary: '#3498db',
+    // accent: '#f1c40f',
+  }
+}
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Cep/>
-    </SafeAreaView>
+    <PaperProvider theme={theme}>
+      <Header />
+      <SafeAreaView style={styles.container}>
+        <Cep />
+      </SafeAreaView>
+    </PaperProvider>
   );
 }
 

@@ -3,8 +3,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#EDEDED',
-        paddingTop: 10,
-        paddingHorizontal: 20,
+        paddingHorizontal: 15,
         width: '100%',
     },
     item: {
@@ -12,7 +11,9 @@ const styles = StyleSheet.create({
         padding: 20,
         backgroundColor: '#ffffff',
         fontSize: 28,
-        borderRadius: 25,
+        borderRadius: 2,
+        borderBottomWidth: 1,
+        borderBottomColor: '#6200EE',
     },
     title: {
         fontSize: 22,
@@ -28,7 +29,13 @@ const styles = StyleSheet.create({
         marginLeft: 55,
     },
     sort: {
-        // backgroundColor: "#333",
+        backgroundColor: "#6200EE",
+        paddingHorizontal: 9,
+        paddingVertical: 10,
+        borderBottomRightRadius: 2,
+        borderTopRightRadius: 2,
+        right: 1,
+        top: 0,
     },
     searchArea: {
         display: "flex",
@@ -37,15 +44,34 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     input: {
-        backgroundColor: 'rgba(255,255,255,0.8)',
-        height: 60,
-        borderRadius: 15,
-        padding: 10,
-        fontSize: 16,
-        marginTop: 10,
-        marginBottom: 10,
+        backgroundColor: 'rgba(255,255,255,1)',
         width: "85%",
+        borderBottomRightRadius: 0,
+        borderTopRightRadius: 0,
     },
+    fab: {
+        position: 'absolute',
+        margin: 16,
+        right: 0,
+        bottom: 0,
+    },
+    btnMap: {
+        marginTop: 15,
+        padding: 5,
+        letterSpacing: 0,
+    },
+    message: {
+        padding: 15,
+        backgroundColor: "#FDD835",
+        marginTop: 15,
+        borderRadius: 2,
+        color: "#000",
+        textAlign: "justify",
+        fontSize: 18,
+    },
+    highlighted: {
+        fontWeight: "bold",
+    }
     });
 
 export default styles
