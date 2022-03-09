@@ -133,10 +133,12 @@ const Cep = () => {
             </View>
 
             { list.length === 0 &&
-            <Text style={styles.message}>
-                Para realizar a busca por <Text style={styles.highlighted}>CEP, Nome da Rua ou Bairro,</Text> digite no campo acima.
-                Se preferir <Text style={styles.highlighted}>clique no botão</Text> para carregar todos os endereços.
-            </Text> }
+                <Text style={styles.message}>
+                    Para realizar a busca por<Text style={styles.highlighted}>CEP, Nome da Rua ou Bairro,</Text> digite no campo acima.
+                    Se preferir <Text style={styles.highlighted}>clique no botão <MaterialCommunityIcons style={styles.sort} name="sort-alphabetical-ascending" size={24} color="#fff" /></Text> para carregar todos os endereços.
+                    {list}
+                </Text>
+            }
 
             <FlatList
                 data={list}
