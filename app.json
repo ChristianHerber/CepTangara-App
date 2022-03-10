@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "cepapp",
+    "name": "CEP Tangará da Serra",
     "slug": "cepapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#6200EE"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
