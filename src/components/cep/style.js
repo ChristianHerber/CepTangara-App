@@ -71,7 +71,17 @@ const styles = StyleSheet.create({
     },
     highlighted: {
         fontWeight: "bold",
+    },
+    messageNotFound : {
+        padding: 15,
+        backgroundColor: "tomato",
+        marginTop: 15,
+        borderRadius: 2,
+        color: "#fff",
+        textAlign: "justify",
+        fontSize: 18,
     }
+
     });
 
 export default styles

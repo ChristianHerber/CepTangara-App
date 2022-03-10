@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#EDEDED',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: '15%',
+    paddingTop: '10%',
     // paddingBottom: '15%',
   },
 });

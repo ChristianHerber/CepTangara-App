@@ -30,6 +30,7 @@ const Cep = () => {
                 }
             }
         })
+        setSearchText('')
     }
 
     useEffect( () => {
@@ -88,7 +89,7 @@ const Cep = () => {
                     <Button
                         style={styles.btnMap}
                         color="#FFEB3B"
-                        icon="map"
+                        icon="map-marker-radius"
                         mode="contained"
                         onPress={ () => {
                             Linking.openURL(`${item.map_locale}`)
@@ -134,10 +135,19 @@ const Cep = () => {
 
             { list.length === 0 &&
                 <Text style={styles.message}>
-                    Para realizar a busca por<Text style={styles.highlighted}>CEP, Nome da Rua ou Bairro,</Text> digite no campo acima.
-                    Se preferir <Text style={styles.highlighted}>clique no botão <MaterialCommunityIcons style={styles.sort} name="sort-alphabetical-ascending" size={24} color="#fff" /></Text> para carregar todos os endereços.
+                    Para realizar a busca por <Text style={styles.highlighted}>CEP, Nome da Rua ou Bairro,</Text> digite no campo acima.
+                    Se preferir <Text style={styles.highlighted}>clique no botão <MaterialCommunityIcons style={styles.sort} name="sort-alphabetical-ascending" size={24} color="#fff" /></Text> para listar todos os endereços.
                     {list}
                 </Text>
+            }
+
+            { searchText !== '' && list.length === 0
+                ?
+                <Text style={styles.messageNotFound}>
+                    Não foram encontrados resultados para a sua pesquisa por: <Text style={styles.highlighted}>{searchText}</Text>
+                </Text>
+                :
+                <Text></Text>
             }
 
             <FlatList
