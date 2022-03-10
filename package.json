@@ -3,9 +3,15 @@
     "name": "CEP Tangará da Serra",
     "displayName": "CEP Tangará da Serra",
     "slug": "cepapp",
-    "privacy": "public"
+    "privacy": "public",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#6200EE"
+    }
   },
-  "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
