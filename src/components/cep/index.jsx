@@ -89,12 +89,12 @@ const Cep = () => {
                     <Button
                         style={styles.btnMap}
                         color="#FFEB3B"
-                        icon="map-marker-radius"
                         mode="contained"
                         onPress={ () => {
                             Linking.openURL(`${item.map_locale}`)
                         } }
                     >
+                        <MaterialCommunityIcons name="map-marker-radius" size={24} color="black" />
                         <Text>Ver no Mapa</Text>
                     </Button>
                     :
@@ -121,6 +121,7 @@ const Cep = () => {
                     label="Pesquisar"
                     value={searchText}
                     onChangeText={(t) => setSearchText(t)}
+                    autoFocus={true}
                 />
             
                 <TouchableOpacity onPress={handleOrderClick}>

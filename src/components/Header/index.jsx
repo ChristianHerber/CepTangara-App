@@ -4,9 +4,9 @@ import { Image } from "react-native"
 
 const Header = () => {
     return (
-        <Appbar.Header>
-            <Image source={require('../../../assets/marca.youtube.webp')} style={{width: 32, height: 32, marginLeft: 10,}} />
-            <Appbar.Content title="Consulta CEP" subtitle="Tangará da Serra - MT" />
+        <Appbar.Header style={{borderBottomColor: '#FFEB3B', borderBottomWidth: 4, height: 70}}>
+            <Image source={require('../../../assets/header.icon.png')} style={{width: 32, height: 23, marginLeft: 10,}} />
+            <Appbar.Content title="CONSULTA CEP" subtitle="TANGARÁ DA SERRA - MT" style={{alignItems: 'center'}}/>
             <Appbar.Action icon="map" onPress={() => {}} />
         </Appbar.Header>
     )
