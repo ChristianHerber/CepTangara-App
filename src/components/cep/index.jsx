@@ -7,7 +7,7 @@ import styles from "./style"
 import { StatusBar } from "expo-status-bar";
 import { TextInput, Button } from 'react-native-paper';
 
-const Cep = () => {
+const Cep = (props) => {
 
     axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*'
     const baseURL = "https://cep-tangaradaserra.herokuapp.com/cep_tangras.json"
