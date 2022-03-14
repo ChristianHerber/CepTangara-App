@@ -24,7 +24,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.cherber.cepapp"
+      "package": "com.cherber.cepapp",
+      "googleMobileAdsAppId": "ca-app-pub-3032945660168947~6273175400"
     },
     "web": {
       "favicon": "./assets/favicon.png"
